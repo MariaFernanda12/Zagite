@@ -1,0 +1,190 @@
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    li {
+ display:inline-block;
+ background:gray;
+ color:white;
+ margin-right:60px;
+ padding: 50px;
+}
+
+ol {
+ width:100%;
+ background:blue;
+ height:120px;
+ text-align:center;
+}
+    
+  
+
+
+
+
+    h1 { 
+      display: block;
+      font-size: 0.2em;
+      margin-top: 0.67em;
+      margin-bottom: 0.67em;
+      margin-left: 0;
+      margin-right: 0;
+      font-weight: bold;
+    }
+    
+    h2{
+      display: block;
+      font-weight: bold;
+      font-family: cursive;
+      font-style: oblique;
+      font-size: 5em;
+     
+
+    }
+    /* Style the header */
+    header {
+     
+      background-color: #0D0C3F;
+      
+      background: url(http://fundacionhumanae.org/wp-content/uploads/2015/05/family-1030x687.jpg) ;
+      padding: 100px;
+      text-align: left;
+      font-size: 300px;
+    font-family: cursive;
+    font-style: oblique;
+      color: #0F0F10;
+    }
+    
+    /* Create two columns/boxes that floats next to each other */
+     
+    
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    article {
+      float: left;
+      padding: 90px;
+      width: 100%;
+      background-color: #f1f1f1;
+      height: 800px; /* only for demonstration, should be removed */
+    }
+    
+    /* Clear floats after the columns */
+    section:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Style the footer */
+    footer {
+      background-color: #0D0C3F;
+      padding: 100px;
+      text-align: center;
+      color: white;
+    }
+    
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+    </style>
+    </head>
+
+    <body>
+
+        <header>
+            <IMG src="https://www.pilarbatanero.es/wp-content/uploads/Logo-Pilar-batanero-flor-sin-fondo.png" align="left" width="350" height="350"/>
+                <br>       
+            
+              <h1>ZAGITE</h1>
+            
+                       
+            </header>
+    
+        <br>
+        <br>
+
+
+
+
+
+      <div class="container principal">
+        <div class="row">
+            <div class="logout" >
+                <a routerLink="../login" class="text_logout"> Logout </a>
+            </div>
+        </div>
+      </div>
+    <div align="center" class="container contenido">
+      <div class="row">
+          
+        <table>
+          <th> 
+              <img src="https://www.flaticon.es/premium-icon/icons/svg/370/370135.svg"  align="center" style="width:290px;height:295px">
+
+              <div class="card-body" class="cardbody" >
+                 
+                    <div class="form-group" >
+                      <h4 style="color: rgb(3, 0, 51)" >Nombre: </h4>
+                      <p style="color: rgb(3, 0, 51)" >{{nombre}} {{apellido}}</p>
+                    </div>
+                    <div class="form-group" >
+                        <h4 style="color: rgb(3, 0, 51)" >Cedula:</h4>
+                        <p style="color: rgb(3, 0, 51)" >{{Cedula}}</p>
+                      </div>
+
+                    <div class="form-group" >
+                      <h4 style="color: rgb(3, 0, 51)" >E-mail:</h4>
+                      <p style="color: rgb(3, 0, 51)" >{{email}}</p>
+                    </div>
+
+                   
+                    
+                   
+                    
+                    </div>
+          </th>
+        </table>
+
+          
+            
+      </div>
+      
+  </div>
+  <article>
+    <h2>Bienvenido a sus sistema de seguridad Zagite</h2>
+    <img src="https://borealtech.com/wp-content/uploads/2018/10/codigo-qr-1024x1024.jpg" class="mx-auto d-block m-4 logo" style="width:290px;height:295px">
+    
+    
+    <ol>
+        <li>Salidas</li>
+        <li>Permisos</li>
+        <li>Certificados</li>
+        <li>Acudientes</li>
+    </ol>
+
+
+
+  </article>
+
+  <footer  class="navbar">
+      <div class="container text-center">
+              <h3 class="navbar-text col-md-12 col-sm-12 col-xs-12"> </h3>
+      </div>
+  </footer>
+</body>
